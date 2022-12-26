@@ -69,7 +69,7 @@
 #define DE_M     M       // M
 #define DE_COMMA COMMA   // ,
 #define DE_DOT   DOT     // .
-#define DE_MINUS FSLH    // -
+#define DE_MINUS SLASH   // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -103,10 +103,10 @@
 // Row 3
 #define DE_SQT    LS(DE_HASH) // '
 // Row 4
-#define DE_GT     LS(DE_LABK) // >
-#define DE_SEMI   LS(DE_COMM) // ;
+#define DE_GT     LS(DE_LT) // >
+#define DE_SEMI   LS(DE_COMMA) // ;
 #define DE_COLON  LS(DE_DOT)  // :
-#define DE_UNDER  LS(DE_MINS) // _
+#define DE_UNDER  LS(DE_MINUS) // _
 
 /* AltGr symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐
@@ -134,5 +134,5 @@
 #define DE_EURO   RA(DE_E)    // €
 #define DE_TILDE  RA(DE_PLUS) // ~
 // Row 4
-#define DE_PIPE   RA(DE_LABK) // |
+#define DE_PIPE   RA(DE_LT) // |
 #define DE_MICR   RA(DE_M)    // µ
