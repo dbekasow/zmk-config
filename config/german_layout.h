@@ -85,7 +85,7 @@
  * └────┴────┴────┴────────────────────────┴────┴────┴────┴────┘
  */
 // Row 1
-#define DE_DEG    LS(DE_CIRC) // °
+#define DE_DEG    LS(DE_CARET) // °
 #define DE_EXCL   LS(DE_1)    // !
 #define DE_DQT    LS(DE_2)    // "
 #define DE_SECT   LS(DE_3)    // §
@@ -99,13 +99,13 @@
 #define DE_QMARK  LS(DE_SS)   // ?
 #define DE_GRAVE  LS(DE_ACUT) // ` (dead)
 // Row 2
-#define DE_STAR   LS(DE_PLUS) // *
+#define DE_STAR   LS(DE_PLUS)  // *
 // Row 3
-#define DE_SQT    LS(DE_HASH) // '
+#define DE_SQT    LS(DE_HASH)  // '
 // Row 4
-#define DE_GT     LS(DE_LT) // >
+#define DE_GT     LS(DE_LT)    // >
 #define DE_SEMI   LS(DE_COMMA) // ;
-#define DE_COLON  LS(DE_DOT)  // :
+#define DE_COLON  LS(DE_DOT)   // :
 #define DE_UNDER  LS(DE_MINUS) // _
 
 /* AltGr symbols
