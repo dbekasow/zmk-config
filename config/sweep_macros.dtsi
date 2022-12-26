@@ -5,11 +5,10 @@
 		tap-ms = <10>; \
 		wait-ms = <0>; \
 		#binding-cells = <0>; \
-		bindings \ 
-			= <&macro_tap &kp FIRST>\
-			, <&macro_release &kp LSHFT> \
-			, <&macro_release &kp RSHFT> \
-			, <&macro_tap &kp SECOND> \
+		bindings = <&macro_tap &kp FIRST> \
+			, <&macro_release &kp LSHFT>  \
+			, <&macro_release &kp RSHFT>  \
+			, <&macro_tap &kp SECOND>     \
 			; \
 	};
 
