@@ -5,3 +5,8 @@
 #define MATH  4
 #define NAV   5
 #define FUN   6	
+
+&mt {
+	tapping-term-ms = <160>;
+	quick-tap-ms = <0>;
+};

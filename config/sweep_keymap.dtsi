@@ -2,9 +2,9 @@ default_layer {
 	label = "Default";
 	bindings = <
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_J		&kp DE_G		&kp DE_M		&kp DE_P		&kp DE_V		&kp DE_AT		&kp DE_DOT		&kp DE_SLASH	&kp DE_DQT		&kp DE_SQT 
+		&kp DE_J		&kp DE_G		&kp DE_M		&kp DE_P		&kp DE_V		&athash			&kp DE_DOT		&slashpipe		&dqtques		&sqtexcl 
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&hm LGUI DE_C	&hm LALT DE_S	&hm LCTRL DE_N	&hm LSHFT DE_T	&kp DE_K		&kp DE_COMMA	&hm RSHFT DE_A	&hm RCTRL DE_E 	&hm LALT DE_I	&hm RGUI DE_H
+		&mt LGUI DE_C	&mt LALT DE_S	&mt LCTRL DE_N	&mt LSHFT DE_T	&kp DE_K		&kp DE_COMMA	&mt RSHFT DE_A	&mt RCTRL DE_E 	&mt LALT DE_I	&mt RGUI DE_H
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
 		&lt GER DE_X	&kp DE_F		&kp DE_L		&kp DE_D		&kp DE_B		&kp DE_MINUS   	&kp DE_U		&kp DE_O		&kp DE_Y		&kp DE_W	
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|

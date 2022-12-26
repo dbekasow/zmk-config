@@ -12,9 +12,18 @@
 #include "sweep_config.dtsi"
 
 / {
-	#include "sweep_behaviors.dtsi"
-	//#include "sweep_combos.dtsi"
-	//#include "sweep_macros.dtsi"
+	behaviors {
+		#include "sweep_overrides.dtsi"
+	};
+
+	macros {
+		#include "sweep_macros.dtsi"
+	};
+	
+	combos {
+		compatible = "zmk,combos";
+		#include "sweep_combos.dtsi"
+	};
 
 	keymap {
 		compatible = "zmk,keymap";

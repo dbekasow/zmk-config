@@ -6,8 +6,3 @@
 		timeout-ms = <40>; \
 	};
 
-combos {
-	compatible = "zmk,combos";
-
-	// H Digraphs
-};
