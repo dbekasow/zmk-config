@@ -10,3 +10,14 @@
 	tapping-term-ms = <160>;
 	quick-tap-ms = <0>;
 };
+
+/ {
+	chosen {
+		zmk,battery = &vbatt;
+	};
+	
+	vbatt: vbatt {
+		compatible = "zmk,battery-nrf-vddh";
+		label = "VBATT";
+	};
+};
