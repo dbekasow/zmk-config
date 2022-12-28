@@ -2,9 +2,8 @@
 #define GER   1
 #define NUM   2
 #define SYM   3
-#define MATH  4
-#define NAV   5
-#define FUN   6	
+#define NAV   4
+#define FUN   5	
 
 &mt {
 	tapping-term-ms = <160>;
