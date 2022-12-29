@@ -8,14 +8,17 @@
 		bindings = <&macro_tap &kp FIRST> \
 			, <&macro_release &kp LSHFT>  \
 			, <&macro_release &kp RSHFT>  \
-			, <&macro_tap &kp SECOND>     \
+			, <&macro_tap SECOND>     \
 			; \
 	};
 
-DIGRAPH(digraphTh, DE_T, DE_H)
-DIGRAPH(digraphSh, DE_S, DE_H)
-DIGRAPH(digraphCh, DE_C, DE_H)
-DIGRAPH(digraphWh, DE_W, DE_H)
-DIGRAPH(digraphPh, DE_P, DE_H)
-DIGRAPH(digraphGh, DE_G, DE_H)
-DIGRAPH(digraphQu, DE_Q, DE_U)
+DIGRAPH(digraphTh, DE_T, &kp DE_H)
+DIGRAPH(digraphSh, DE_S, &kp DE_H)
+DIGRAPH(digraphCh, DE_C, &kp DE_H)
+DIGRAPH(digraphWh, DE_W, &kp DE_H)
+DIGRAPH(digraphPh, DE_P, &kp DE_H)
+DIGRAPH(digraphGh, DE_G, &kp DE_H)
+DIGRAPH(digraphQu, DE_Q, &kp DE_U)
+DIGRAPH(digraphCk, DE_C, &kp DE_K)
+
+DIGRAPH(trigraphSch, DE_S, &kp DE_C &kp DE_H)
