@@ -2,16 +2,18 @@ hm: homerow_mods {
     compatible = "zmk,behavior-hold-tap";
     label = "homerow_mods";
     #binding-cells = <2>;
-    tapping-term-ms = <TAPPING_TERM>;
+    tapping-term-ms = <150>;
+    quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };
 
-hmp: homerow_mods {
+hmp: homerow_mods_pinky {
     compatible = "zmk,behavior-hold-tap";
-    label = "homerow_mods";
+    label = "homerow_mods_pinky";
     #binding-cells = <2>;
-    tapping-term-ms = <TAPPING_TERM_PINKY>;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&kp>;
 };

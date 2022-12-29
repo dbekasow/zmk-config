@@ -4,13 +4,6 @@
 #define NAV   3
 #define FUN   4	
 
-#define TAPPING_TERM 160
-#define TAPPING_TERM_PINKY 300
-
-&lt {
-	tapping-term-ms = <TAPPING_TERM>;
-};
-
 / {
 	chosen {
 		zmk,battery = &vbatt;
