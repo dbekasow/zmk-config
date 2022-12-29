@@ -1,8 +1,7 @@
-#define HOMEROW_STR(s) homerow_mods_##s
 #define HOMEROW(KEY, LABEL, TAPPING) \
-    KEY: homerow_mods_##LABEL { \
+    KEY: hm_##LABEL { \
         compatible = "zmk,behavior-hold-tap"; \
-        label = HOMEROW_STR(LABEL); \
+        label = ZMK_MACRO_STRINGIFY(hm_##LABEL); \
         #binding-cells = <2>; \
         tapping-term-ms = <TAPPING>; \
         quick-tap-ms = <0>; \
