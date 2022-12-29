@@ -1,9 +1,8 @@
 #define BASE  0
-#define GER   1
-#define NUM   2
-#define SYM   3
-#define NAV   4
-#define FUN   5	
+#define NUM   1
+#define SYM   2
+#define NAV   3
+#define FUN   4	
 
 #define TAPPING_TERM 160
 #define TAPPING_TERM_PINKY 300

@@ -25,8 +25,17 @@ COMBO(ch, &digraphCh, 11 13, BASE)
 COMBO(wh, &digraphWh, 27 28, BASE)
 COMBO(gh, &digraphGh,  1  2, BASE)
 COMBO(ph, &digraphPh,  2  3, BASE)
+COMBO(qu, &digraphQu, 26 29, BASE)
 
 /* Text processing */
 COMBO(copy,  &kp LC(DE_C), 21 22, BASE)
 COMBO(cut,   &kp LC(DE_X), 21 23, BASE)
 COMBO(paste, &kp LC(DE_V), 22 23, BASE)
+
+/* Letters */
+COMBO(ae, &kp DE_ADIA,  16  17, BASE)
+COMBO(ue, &kp DE_UDIA,  26  27, BASE)
+COMBO(oe, &kp DE_ODIA,  26  28, BASE)
+COMBO(z,  &kp DE_Z,		 0   1, BASE)
+COMBO(ss, &kp DE_SS, 0   1   2, BASE)
+COMBO(q,  &kp DE_Q,     28  29, BASE)
