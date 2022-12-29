@@ -1,9 +1,16 @@
-hm: homerow_mods {
-    compatible = "zmk,behavior-hold-tap";
-    label = "homerow_mods";
-    #binding-cells = <2>;
-    tapping-term-ms = <160>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&kp>;
-};
+#define HOMEROW_STR(s) homerow_mods_##s
+#define HOMEROW(KEY, LABEL, TAPPING) \
+    KEY: homerow_mods_##LABEL { \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = HOMEROW_STR(LABEL); \
+        #binding-cells = <2>; \
+        tapping-term-ms = <TAPPING>; \
+        quick-tap-ms = <0>; \
+        flavor = "tap-preferred"; \
+        bindings = <&kp>, <&kp>; \
+    };
+
+HOMEROW(hmi, index, 160)
+HOMEROW(hmm, middle, 200)
+HOMEROW(hmr, ring, 240)
+HOMEROW(hmp, pinky, 280)
