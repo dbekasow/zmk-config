@@ -5,9 +5,11 @@
 #define NAV   4
 #define FUN   5	
 
-&mt {
-	tapping-term-ms = <160>;
-	quick-tap-ms = <0>;
+#define TAPPING_TERM 160
+#define TAPPING_TERM_PINKY 300
+
+&lt {
+	tapping-term-ms = <TAPPING_TERM>;
 };
 
 / {
