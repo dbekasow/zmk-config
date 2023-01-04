@@ -3,7 +3,7 @@
 		bindings = <BINDINGS>; \
 		key-positions = <KEYPOS>; \
 		layers = <LAYERS>; \
-		timeout-ms = <40>; \
+		timeout-ms = <50>; \
 	};
 
 
@@ -40,6 +40,6 @@ COMBO(paste, &kp LC(DE_V), 22 23, BASE)
 COMBO(ae, &kp DE_ADIA,  16  17, BASE)
 COMBO(ue, &kp DE_UDIA,  26  27, BASE)
 COMBO(oe, &kp DE_ODIA,  26  28, BASE)
-COMBO(z,  &kp DE_Z,		10  11, BASE)
-COMBO(ss, &kp DE_SS,    10  11  12, BASE)
+COMBO(z,  &kp DE_Z,		17  18, BASE)
+COMBO(ss, &kp DE_SS,    16  17  18, BASE)
 COMBO(q,  &kp DE_Q,     28  29, BASE)
