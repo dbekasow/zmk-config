@@ -10,5 +10,4 @@
 
 OVERRIDE(sqtexcl,   SQT_EXCL,   DE_SQT,   DE_EXCL)
 OVERRIDE(dqtques,   DQT_QUES,   DE_DQT,   DE_QMARK)
-OVERRIDE(athash,    AT_HASH,    DE_AT,    DE_HASH)
 OVERRIDE(slashpipe, SLASH_PIPE, DE_SLASH, DE_PIPE)
