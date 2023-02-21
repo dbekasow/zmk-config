@@ -1,8 +1,9 @@
 #define BASE  0
-#define NUM   1
-#define SYM   2
-#define NAV   3
-#define FUN   4	
+#define SYM   1
+#define MATH  2
+#define NUM   3
+#define NAV   4
+#define FUN   5	
 
 / {
 	chosen {
