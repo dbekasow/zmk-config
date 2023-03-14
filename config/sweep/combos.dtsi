@@ -63,5 +63,5 @@ COMBO(q,  &kp DE_Q,     28  29, BASE)
 
 ADAPT(mb, &digraphMb, 2 4, BASE)
 ADAPT(ml, &digraphMl, 2 3, BASE)
-ADAPT(gl, &digraphGl, 1 2, BASE)
-ADAPT(pl, &digraphPl, 3 2, BASE)
+ADAPT(gl, &digraphGl, 2 1, BASE)
+ADAPT(pl, &digraphPl, 3 1, BASE)
