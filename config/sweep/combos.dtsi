@@ -61,7 +61,13 @@ COMBO(q,  &kp DE_Q,     28  29, BASE)
 				30	31		32	33
 			  |---+---|   |---+---| 			*/
 
-ADAPT(mb, &digraphMb, 2 4, BASE)
-ADAPT(ml, &digraphMl, 2 3, BASE)
-ADAPT(gl, &digraphGl, 2 1, BASE)
-ADAPT(pl, &digraphPl, 3 1, BASE)
+ADAPT(mb, &digraphMb,  2  4, BASE)
+ADAPT(ml, &digraphMl,  2  3, BASE)
+ADAPT(gl, &digraphGl,  2  1, BASE)
+ADAPT(pl, &digraphPl,  3  1, BASE)
+ADAPT(xc, &digraphXc, 20 21, BASE)
+
+ADAPT(au, &digraphAu, 16 15, BASE)
+ADAPT(ua, &digraphUa, 26 25, BASE)
+ADAPT(eo, &digraphEo, 17 15, BASE)
+ADAPT(oe, &digraphOe, 27 25, BASE)
