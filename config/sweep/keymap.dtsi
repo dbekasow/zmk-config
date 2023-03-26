@@ -28,7 +28,6 @@ symbol_layer {
 	>;
 };
 
-
 math_layer {
 	label = "Math";
 	bindings = <
