@@ -27,16 +27,16 @@ COMBO(ph, &digraphPh, 21 22, BASE)
 COMBO(qu, &digraphQu, 20 23, BASE)
 
 /* Trigraphs */
-COMBO(sch, &trigraphSch, 10 13, BASE)
+COMBO(sch, &trigraphSch, 11 13, BASE)
 
 /* Letters */
-COMBO(z, &kp DE_Z, 13 14, BASE)
+COMBO(z, &kp DE_Z,   0 1, BASE)
 COMBO(q, &kp DE_Q, 20 21, BASE)
 
 COMBO(ae, &kp DE_ADIA, 16 17, BASE)
 COMBO(ue, &kp DE_UDIA, 26 27, BASE)
 COMBO(oe, &kp DE_ODIA, 27 28, BASE)
-COMBO(ss, &kp DE_SS,   10 11, BASE)
+COMBO(ss, &kp DE_SS,   10 13, BASE)
 
 
 #define ADAPT(NAME, BINDINGS, KEYPOS, LAYERS) \
@@ -58,8 +58,8 @@ COMBO(ss, &kp DE_SS,   10 11, BASE)
 			  |---+---|   |---+---| 			*/
 
 ADAPT(mb, &digraphMb,  2  4, BASE)
-ADAPT(ml, &digraphMl,  2  3, BASE)
-ADAPT(gl, &digraphGl,  2  1, BASE)
+ADAPT(ml, &digraphMl,  1  2, BASE)
+ADAPT(gl, &digraphGl,  3  2, BASE)
 
 ADAPT(au, &digraphAu, 26 25, BASE)
 ADAPT(ua, &digraphUa, 16 15, BASE)

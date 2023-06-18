@@ -8,6 +8,7 @@
 		mods = <(MOD_LSFT|MOD_RSFT)>; \
 	};
 
-OVERRIDE(sqtexcl,   SQT_EXCL,   DE_SQT,   DE_EXCL)
-OVERRIDE(dqtques,   DQT_QUES,   DE_DQT,   DE_QMARK)
-OVERRIDE(slashpipe, SLASH_PIPE, DE_SLASH, DE_PIPE)
+OVERRIDE(hashat,      HASH_AT,     DE_HASH,   DE_AT)
+OVERRIDE(slashpipe,   SLASH_PIPE,  DE_SLASH,  DE_PIPE)
+OVERRIDE(sqtdqt,      SQT_DQT,     DE_SQT,    DE_DQT)
+OVERRIDE(equalamps,   EQUAL_AMPS,  DE_EQUAL,  DE_AMPS)

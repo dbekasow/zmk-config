@@ -2,7 +2,7 @@ default_layer {
 	label = "Default";
 	bindings = <
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_X		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J		&kp DE_HASH		&kp DE_DOT		&kp DE_EQUAL	&kp DE_SLASH 	&kp DE_SQT
+		&kp DE_X		&kp DE_W		&kp DE_M		&kp DE_G		&kp DE_J		&hashat			&kp DE_DOT		&equalamps	 	&slashpipe	 	&sqtdqt
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
 		&hmp LGUI DE_S	&hmr LALT DE_C	&hmm LCTRL DE_N	&hmi LSHFT DE_T	&kp DE_K		&kp DE_COMMA	&hmi LSHFT DE_A	&hmm LCTRL DE_E &hmr LALT DE_I	&hmp LGUI DE_H
 	// --------------+---------------+---------------+---------------+--------------||---------------+---------------+---------------+---------------+---------------|
