@@ -30,7 +30,7 @@ COMBO(qu, &digraphQu, 20 23, BASE)
 COMBO(sch, &trigraphSch, 11 13, BASE)
 
 /* Letters */
-COMBO(z, &kp DE_Z,   0 1, BASE)
+COMBO(z, &kp DE_Z,   1 3, BASE)
 COMBO(q, &kp DE_Q, 20 21, BASE)
 
 COMBO(ae, &kp DE_ADIA, 16 17, BASE)
