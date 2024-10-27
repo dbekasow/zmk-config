@@ -7,13 +7,18 @@
 
     zmk-nix.url = "github:lilyinstarlight/zmk-nix";
     zmk-nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    git-hooks-nix.url = "github:cachix/git-hooks.nix";
   };
 
   outputs = inputs@{ flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
-      imports = [ ./pkgs ];
+      imports = [
+        inputs.git-hooks-nix.flakeModule
+        ./pkgs
+      ];
       systems = nixpkgs.lib.systems.flakeExposed;
-      perSystem = { lib, pkgs, self', inputs', ... }:
+      perSystem = { config, lib, pkgs, self', inputs', ... }:
         let
           inherit (inputs') zmk-nix;
         in
@@ -44,7 +49,22 @@
               keymap = "splitkb_aurora_sweep.keymap";
             };
           };
-          devShells.default = zmk-nix.devShells.default;
+          pre-commit = {
+            check.enable = true;
+            settings.hooks = {
+              commitizen.enable = true;
+              nixpkgs-fmt.enable = true;
+              typos.enable = true;
+              yamlfmt.enable = true;
+            };
+          };
+          devShells.default = pkgs.mkShell {
+            name = "zmk-config";
+            inputsFrom = [
+              config.pre-commit.devShell
+              zmk-nix.devShells.default
+            ];
+          };
         };
     };
 }
