@@ -1,0 +1,32 @@
+#define DIGRAPH(NAME, FIRST, SECOND) \
+	NAME: NAME { \
+		compatible = "zmk,behavior-macro"; \
+		label = #NAME; \
+		tap-ms = <10>; \
+		wait-ms = <0>; \
+		#binding-cells = <0>; \
+		bindings = <&macro_tap &kp FIRST> \
+			, <&macro_release &kp LSHFT>  \
+			, <&macro_release &kp RSHFT>  \
+			, <&macro_tap SECOND>     \
+			; \
+	};
+
+DIGRAPH(digraphTh, DE_T, &kp DE_H)
+DIGRAPH(digraphSh, DE_S, &kp DE_H)
+DIGRAPH(digraphCh, DE_C, &kp DE_H)
+DIGRAPH(digraphWh, DE_W, &kp DE_H)
+DIGRAPH(digraphPh, DE_P, &kp DE_H)
+DIGRAPH(digraphGh, DE_G, &kp DE_H)
+DIGRAPH(digraphQu, DE_Q, &kp DE_U)
+
+DIGRAPH(trigraphSch, DE_S, &kp DE_C &kp DE_H)
+
+DIGRAPH(digraphMb, DE_M, &kp DE_B)
+DIGRAPH(digraphMl, DE_M, &kp DE_L)
+DIGRAPH(digraphGl, DE_G, &kp DE_L)
+
+DIGRAPH(digraphAu, DE_A, &kp DE_U)
+DIGRAPH(digraphUa, DE_U, &kp DE_A)
+DIGRAPH(digraphOe, DE_O, &kp DE_E)
+DIGRAPH(digraphEo, DE_E, &kp DE_O)

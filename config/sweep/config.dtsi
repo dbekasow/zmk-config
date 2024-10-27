@@ -1,0 +1,17 @@
+#define BASE  0
+#define SYM   1
+#define MATH  2
+#define NUM   3
+#define NAV   4
+#define FUN   5	
+
+/ {
+	chosen {
+		zmk,battery = &vbatt;
+	};
+	
+	vbatt: vbatt {
+		compatible = "zmk,battery-nrf-vddh";
+		label = "VBATT";
+	};
+};

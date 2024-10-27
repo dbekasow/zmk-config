@@ -1,0 +1,17 @@
+#define STR(s) #s
+#define OVERRIDE(ID, LABEL, FIRST, SECOND) \
+	ID: LABEL { \
+		label = STR(LABEL); \
+		compatible = "zmk,behavior-mod-morph"; \
+		#binding-cells = <0>; \
+		bindings = <&kp FIRST>, <&kp SECOND>; \
+		mods = <(MOD_LSFT|MOD_RSFT)>; \
+	};
+
+OVERRIDE(minsunds,  MINS_UNDS, DE_MINUS, DE_UNDER)
+OVERRIDE(comasemi,  COMA_SEMI, DE_COMMA, DE_SEMI)
+OVERRIDE(hashat,    HASH_AT,   DE_HASH,  DE_AT)
+OVERRIDE(dotcolon,  DOT_COLON, DE_DOT,   DE_COLON)
+OVERRIDE(slashamps, SLASH_AMPS,DE_SLASH, DE_AMPS)
+OVERRIDE(dqtques,   DQT_QUES,  DE_DQT,   DE_QMARK)
+OVERRIDE(sqtexcl,   SQT_EXCL,  DE_SQT,   DE_EXCL)

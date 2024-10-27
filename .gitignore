@@ -1,0 +1,10 @@
+# zmk
+/.west
+/modules
+/zephyr
+/zmk
+/build
+
+# nix
+.devenv
+.direnv
