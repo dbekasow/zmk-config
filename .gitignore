@@ -6,5 +6,4 @@
 /build
 
 # nix
-.devenv
 .direnv
