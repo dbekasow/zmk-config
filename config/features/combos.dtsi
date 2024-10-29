@@ -1,0 +1,36 @@
+#include "../../common/keypos_def.h"
+#include "../../common/layers_def.h"
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+   combo_##NAME { \
+       bindings = <BINDINGS>; \
+       key-positions = <KEYPOS>; \
+       layers = <LAYERS>; \
+       timeout-ms = <50>; \
+   };
+
+// Additional letters
+COMBO(z, &kp DE_Z,         LT1 LT3, BASE)
+COMBO(q, &kp DE_Q,         LB1 LB2, BASE)
+
+// German letters
+COMBO(ae, &kp DE_ADIA,     RM1 RM2, BASE)
+COMBO(ue, &kp DE_UDIA,     RB1 RB2, BASE)
+COMBO(oe, &kp DE_ODIA,     RB2 RB3, BASE)
+COMBO(ss, &kp DE_SS,       LM1 LM4, BASE)
+
+// Common digraphs
+COMBO(wh, &digraphWh,      LT1 LT2, BASE)
+COMBO(gh, &digraphGh,      LT2 LT3, BASE)
+COMBO(sh, &digraphSh,      LM1 LM2, BASE)
+COMBO(ch, &digraphCh,      LM2 LM3, BASE)
+COMBO(th, &digraphTh,      LM3 LM4, BASE)
+COMBO(ph, &digraphPh,      LB2 LB4, BASE)
+COMBO(qu, &digraphQu,      LB1 LB4, BASE)
+
+// Trigraphs
+COMBO(sch, &trigraphSch,   LM2 LM4, BASE)
+
+// Functions
+COMBO(copy,  &kp LC(DE_C)  LB2 LB3, BASE)
+COMBO(paste, &kp LC(DE_V), LB3 LB4, BASE)
