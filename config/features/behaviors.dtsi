@@ -9,7 +9,8 @@
         bindings = <&kp>, <&kp>; \
     };
 
-HOMEROW(hmi, index, 160)
-HOMEROW(hmm, middle, 200)
-HOMEROW(hmr, ring, 240)
-HOMEROW(hmp, pinky, 280)
+// Homerow mods with increasing tapping terms based on finger strength
+HOMEROW(hmi, index,  160)  // index: fastest response
+HOMEROW(hmm, middle, 200)  // middle finger
+HOMEROW(hmr, ring,   240)  // ring finger
+HOMEROW(hmp, pinky,  280)  // pinky: slowest response
