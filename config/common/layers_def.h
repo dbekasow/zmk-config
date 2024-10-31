@@ -16,7 +16,6 @@
 
 // Secondary layers
 #define FUN   5  // Function keys and system controls
-#define MOUSE 6  // Mouse control and scrolling
 
 /*
  * Layer activation overview:
@@ -29,5 +28,4 @@
  * 
  * Secondary Layers:
  * FUN:   via NAV + Tab
- * MOUSE: via NAV + M
  */
