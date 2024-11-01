@@ -31,16 +31,16 @@ COMBO(oe, &kp DE_ODIA,     RB2 RB3, BASE, COMBO_FAST)
 COMBO(ss, &kp DE_SS,       LM1 LM4, BASE, COMBO_FAST)
 
 // Common digraphs
-COMBO(wh, &digraphWh,      LT1 LT2, BASE, COMBO_FAST)
-COMBO(gh, &digraphGh,      LT2 LT3, BASE, COMBO_FAST)
-COMBO(sh, &digraphSh,      LM1 LM2, BASE, COMBO_FAST)
+COMBO(wh, &digraphWh,      LT2 LT3, BASE, COMBO_FAST)
+COMBO(gh, &digraphGh,      LT1 LT2, BASE, COMBO_FAST)
+COMBO(sh, &digraphSh,      LM3 LM4, BASE, COMBO_FAST)
 COMBO(ch, &digraphCh,      LM2 LM3, BASE, COMBO_FAST)
-COMBO(th, &digraphTh,      LM3 LM4, BASE, COMBO_FAST)
-COMBO(ph, &digraphPh,      LB2 LB4, BASE, COMBO_FAST)
-COMBO(qu, &digraphQu,      LB1 LB4, BASE, COMBO_FAST)
+COMBO(th, &digraphTh,      LM1 LM2, BASE, COMBO_FAST)
+COMBO(ph, &digraphPh,      LB2 LB3, BASE, COMBO_FAST)
+COMBO(qu, &digraphQu,      LB1 LB4, BASE, COMBO_SLOW)
 
 // Trigraphs
-COMBO(sch, &trigraphSch,   LM2 LM4, BASE, COMBO_FAST)
+COMBO(sch, &trigraphSch,   LM2 LM4, BASE, COMBO_SLOW)
 
 // Functions
 COMBO(copy,  &kp LC(DE_C), LB2 LB3, BASE, COMBO_FAST)
