@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-antecedent-morph
       remote: ssbb
-      revision: v1
+      revision: main
   self:
     path: config

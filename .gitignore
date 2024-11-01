@@ -1,9 +1,9 @@
-# zmk
+/.direnv
 /.west
+/build
 /modules
+/result
 /zephyr
 /zmk
-/build
 
-# nix
-.direnv
+repopack-output.txt
