@@ -8,11 +8,11 @@ build:
 
 # Flash left half (requires bootloader mode)
 flash-left:
-    nix run .#flash -- --part left
+    nix run .#flash -- left
 
 # Flash right half (requires bootloader mode)
 flash-right:
-    nix run .#flash -- --part right
+    nix run .#flash -- right
 
 # Update West dependencies
 update:
