@@ -16,7 +16,7 @@
       perSystem = { config, lib, pkgs, self', inputs', ... }: {
         packages = {
           firmware = inputs'.zmk-nix.legacyPackages.buildSplitKeyboard {
-            name = "sweep-firmware";
+            name = "firmware";
 
             src = lib.sourceFilesBySuffices ./. [ ".conf" ".dtsi" ".h" ".keymap" ".yml" ];
 

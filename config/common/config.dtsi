@@ -1,10 +1,17 @@
 &lt {
-	flavor = "balanced";
+	flavor = "tap-preferred";
+	tapping-term-ms = <175>;
+	quick-tap-ms = <175>;
+};
+
+&sl {
+    release-after-ms = <1000>;
+    quick-release;
 };
 
 &sk {
-    quick-release;
     release-after-ms = <1000>;
+    quick-release;
 };
 
 / {
