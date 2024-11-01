@@ -1,0 +1,27 @@
+#define STR(s) #s
+#define ADAPT(NAME, ANTE, DEFAULT, RESULT, ...)       \
+    ad_##NAME: adaptive_##NAME {                      \
+        compatible = "zmk,behavior-antecedent-morph"; \
+        label = STR(ADAPTIVE_##NAME);                 \
+        #binding-cells = <0>;                         \
+        defaults = <DEFAULT>;                         \
+        antecedents = <ANTE>;                         \
+        bindings = <RESULT>;                          \
+        max-delay-ms = <250>;                         \
+	   __VA_ARGS__                                    \
+    };
+
+/* Vokal-Adaptives */
+ADAPT(comasemi, DE_A DE_E, &comasemi, &kp DE_U &kp DE_O) // A, -> AU | E, -> EO
+ADAPT(minsunds, DE_U DE_O, &minsunds, &kp DE_A &kp DE_E) // U- -> UA | O- -> OE
+
+/* M/L Transformation */
+ADAPT(g, DE_M, &kp DE_G, &kp DE_L)                       // MG -> ML
+ADAPT(b, DE_L, &kp DE_B, &kp DE_M)                       // LB -> LM
+ADAPT(j, DE_M, &kp DE_J, &kp DE_B)                       // MJ -> MB
+
+/* G-Adaptives */
+ADAPT(m, DE_G, &kp DE_M, &kp DE_L)                       // GM -> GL
+
+/* B-Adaptives */
+ADAPT(l, DE_B, &kp DE_L, &kp DE_M)                       // BL -> BM 

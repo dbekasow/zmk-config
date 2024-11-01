@@ -16,14 +16,14 @@
       perSystem = { config, lib, pkgs, self', inputs', ... }: {
         packages = {
           firmware = inputs'.zmk-nix.legacyPackages.buildSplitKeyboard {
-            name = "sweep-firmware";
+            name = "firmware";
 
             src = lib.sourceFilesBySuffices ./. [ ".conf" ".dtsi" ".h" ".keymap" ".yml" ];
 
             board = "nice_nano_v2";
             shield = "splitkb_aurora_sweep_%PART%";
 
-            zephyrDepsHash = "sha256-Xfu6eWmAOE/ZcY5XszdD0YHaGK1eIoydcd5TTh8spPw=";
+            zephyrDepsHash = "sha256-37o5eTIXfpNo3piqzOenurGvOrlI3e0U+tunSkOn44g=";
 
             meta = with lib; {
               description = "Firmware for my sweep keyboard";

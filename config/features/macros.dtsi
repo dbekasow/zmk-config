@@ -1,0 +1,41 @@
+#define STR(s) #s
+#define DIGRAPH(NAME, FIRST, SECOND)       \
+    digraph##NAME: digraph##NAME {         \
+        compatible = "zmk,behavior-macro"; \
+        label = STR(DIGRAPH_##NAME);       \
+        tap-ms = <15>;                     \
+        wait-ms = <10>;                    \
+        #binding-cells = <0>;              \
+        bindings = <&macro_tap &kp FIRST>  \
+            , <&macro_release &kp LSHFT>   \
+            , <&macro_release &kp RSHFT>   \
+            , <&macro_tap &kp SECOND>      \
+            ;                              \
+    };
+
+/* Phoneme combinations */
+DIGRAPH(Wh, DE_W, DE_H)
+DIGRAPH(Gh, DE_G, DE_H)
+DIGRAPH(Sh, DE_S, DE_H)
+DIGRAPH(Ch, DE_C, DE_H)
+DIGRAPH(Th, DE_T, DE_H)
+DIGRAPH(Ph, DE_P, DE_H)
+DIGRAPH(Qu, DE_Q, DE_U)
+
+#define TRIGRAPH(NAME, FIRST, SECOND, THIRD) \
+    trigraph##NAME: trigraph##NAME {         \
+        compatible = "zmk,behavior-macro";   \
+        label = STR(TRIGRAPTH_##LABEL);      \
+        tap-ms = <15>;                       \
+        wait-ms = <10>;                      \
+        #binding-cells = <0>;                \
+        bindings = <&macro_tap &kp FIRST>    \
+            , <&macro_release &kp LSHFT>     \
+            , <&macro_release &kp RSHFT>     \
+            , <&macro_tap &kp SECOND>        \
+            , <&macro_tap &kp THIRD>         \
+            ;                                \
+    };
+
+/* Trigraph combinations */
+TRIGRAPH(Sch, DE_S, DE_C, DE_H)

@@ -1,0 +1,26 @@
+&lt {
+	flavor = "tap-preferred";
+	tapping-term-ms = <175>;
+	quick-tap-ms = <175>;
+};
+
+&sl {
+    release-after-ms = <1000>;
+    quick-release;
+};
+
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+};
+
+/ {
+	chosen {
+		zmk,battery = &vbatt;
+	};
+
+	vbatt: vbatt {
+		compatible = "zmk,battery-nrf-vddh";
+		label = "VBATT";
+	};
+};
