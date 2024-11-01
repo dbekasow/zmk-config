@@ -1,0 +1,21 @@
+#define ADAPT(NAME, KEY, ANTE, ...) \
+    am_##NAME: NAME { \
+        compatible = "zmk,behavior-antecedent-morph"; \
+        label = ZMK_MACRO_STRINGIFY(am_##NAME); \
+        #binding-cells = <0>; \
+        defaults = <&kp KEY>; \
+        bindings = <&kp KEY>; \
+        antecedents = <ANTE>; \
+        max-delay-ms = <150>; \
+		__VA_ARGS__           \
+    };
+
+// Vowel pairs with H
+ADAPT(a, DE_A, <&kp DE_U>, <DE_H>)         // AH -> AU
+ADAPT(u, DE_U, <&kp DE_A>, <DE_H>)         // UH -> UA
+ADAPT(e, DE_E, <&kp DE_O>, <DE_H>)         // EH -> EO
+ADAPT(o, DE_O, <&kp DE_E>, <DE_H>)         // OH -> OE
+
+// Consonant adaptives
+ADAPT(m, DE_M, <&kp DE_L>, <DE_G>)         // MG -> L
+ADAPT(l, DE_L, <&kp DE_L>, <DE_M DE_G>)    // After M or G stays L

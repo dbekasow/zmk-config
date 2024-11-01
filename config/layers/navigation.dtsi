@@ -1,19 +1,20 @@
+
 /*
- * Base Layer Layout
- * -----------------
+ * Navigation Layer Layout
+ * -----------------------
  */
 
-base_layer {
-	label = "Base";
+navigation_layer {
+	label = "Navigation";
 	bindings = <
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_X		&kp DE_W		&kp DE_M		 &kp DE_G		  &kp DE_J		  &hashat		  &dotcolon		  &slashamps	  &dqtques	 	  &sqtexcl
+		&caps_word		&kp HOME		&kp UP			 &kp END		  &kp PG_UP		  &none			  &none			  &none			  &none			  &none 
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&hmp LGUI DE_S	&hmr LALT DE_C	&hmm LCTRL DE_N	 &hmi LSHFT DE_T  &kp DE_K		  &comasemi		  &hmi LSHFT DE_A &hmm LCTRL DE_E &hmr LALT DE_I  &hmp LGUI DE_H
+		&kp ESC 		&kp LEFT		&kp DOWN		 &kp RIGHT		  &kp PG_DN		  &none			  &sk LSHFT		  &sk LCTRL 	  &sk LALT		  &sk LGUI
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_V		&kp DE_P		&kp DE_L		 &kp DE_D		  &kp DE_B		  &minsunds	   	  &kp DE_U		  &kp DE_O		  &kp DE_Y		  &kp DE_F	
+		&kp LC(Z)		&kp LC(X)		&kp LC(C)		 &kp LC(V)		  &kp K_APP		  &none	    	  &none			  &none			  &none			  &none	
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-														 &lt SYM BSPC	  &lt NUM DE_R	  &lt NAV SPACE	  &lt MATH RET
+														 &kp DEL		  &lt FUN TAB	  &none			&none
 							        				  //----------------+--------------||---------------+---------------|
 	>;
 };

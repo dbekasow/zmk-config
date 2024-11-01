@@ -1,0 +1,16 @@
+#define STR(s) #s
+#define HOMEROW(KEY, LABEL, TAPPING)          \
+    KEY: hm_##LABEL {                         \
+        compatible = "zmk,behavior-hold-tap"; \
+        label = STR(HOMEROW_##LABEL);         \
+        #binding-cells = <2>;                 \
+        tapping-term-ms = <TAPPING>;          \
+        quick-tap-ms = <0>;                   \
+        flavor = "tap-preferred";             \
+        bindings = <&kp>, <&kp>;              \
+    };
+
+HOMEROW(hmi, index,  160)
+HOMEROW(hmm, middle, 200)
+HOMEROW(hmr, ring,   240)
+HOMEROW(hmp, pinky,  280)
