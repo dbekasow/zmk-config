@@ -1,5 +1,5 @@
 #define STR(s) #s
-#define ADAPT(NAME, DEFAULT, ANTE, RESULT, ...)       \
+#define ADAPT(NAME, ANTE, DEFAULT, RESULT, ...)       \
     ad_##NAME: adaptive_##NAME {                      \
         compatible = "zmk,behavior-antecedent-morph"; \
         label = STR(ADAPTIVE_##NAME);                 \
@@ -12,13 +12,16 @@
     };
 
 /* Vokal-Adaptives */
-ADAPT(a_hmi, &hmi LSHFT DE_A, DE_COMMA DE_SEMI,  &kp DE_U)   // A[,;] -> AU
-ADAPT(u,     &kp DE_U,        DE_MINUS DE_UNDER, &kp DE_A)   // U[-_] -> UA
-ADAPT(e_hmm, &hmm LCTRL DE_E, DE_COMMA DE_SEMI,  &kp DE_O)   // E[,;] -> EO
-ADAPT(o,     &kp DE_O,        DE_MINUS DE_UNDER, &kp DE_E)   // O[-_] -> OE
+ADAPT(comasemi, DE_A DE_E, &comasemi, &kp DE_U &kp DE_O) // A, -> AU | E, -> EO
+ADAPT(minsunds, DE_U DE_O, &minsunds, &kp DE_A &kp DE_E) // U- -> UA | O- -> OE
 
 /* M/L Transformation */
-ADAPT(m, &kp DE_M, DE_G DE_J, &kp DE_L &kp DE_B)         // MG -> ML | MJ -> MB
+ADAPT(g, DE_M, &kp DE_G, &kp DE_L)                       // MG -> ML
+ADAPT(b, DE_L, &kp DE_B, &kp DE_M)                       // LB -> LM
+ADAPT(j, DE_M, &kp DE_J, &kp DE_B)                       // MJ -> MB
+
+/* G-Adaptives */
+ADAPT(m, DE_G, &kp DE_M, &kp DE_L)                       // GM -> GL
 
 /* B-Adaptives */
-ADAPT(b, &kp DE_B, DE_L, &kp DE_M)                       // BL -> BM 
+ADAPT(l, DE_B, &kp DE_L, &kp DE_M)                       // BL -> BM 

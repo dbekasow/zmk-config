@@ -6,13 +6,9 @@ default:
 build:
     nix build .#firmware
 
-# Flash left half (requires bootloader mode)
-flash-left:
-    nix run .#flash -- left
-
-# Flash right half (requires bootloader mode)
-flash-right:
-    nix run .#flash -- right
+# Flash (requires bootloader mode)
+flash half:
+    nix run .#flash -- {{half}}
 
 # Update West dependencies
 update:
