@@ -7,11 +7,11 @@ base_layer {
 	label = "Base";
 	bindings = <
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_X		&kp DE_W		&kp DE_M		 &kp DE_G		  &kp DE_J		  &hashat		  &dotcolon		  &slashamps	  &dqtques	 	  &sqtexcl
+		&kp DE_X		&kp DE_W		&ad_m		     &kp DE_G		  &kp DE_J		  &hashat		  &dotcolon		  &slashamps	  &dqtques	 	  &sqtexcl
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&hmp LGUI DE_S	&hmr LALT DE_C	&hmm LCTRL DE_N	 &hmi LSHFT DE_T  &kp DE_K		  &comasemi		  &hmi LSHFT DE_A &hmm LCTRL DE_E &hmr LALT DE_I  &hmp LGUI DE_H
+		&hmp LGUI DE_S	&hmr LALT DE_C	&hmm LCTRL DE_N	 &hmi LSHFT DE_T  &kp DE_K		  &comasemi		  &ad_a_hmi       &ad_e_hmm       &hmr LALT DE_I  &hmp LGUI DE_H
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
-		&kp DE_V		&kp DE_P		&kp DE_L		 &kp DE_D		  &kp DE_B		  &minsunds	   	  &kp DE_U		  &kp DE_O		  &kp DE_Y		  &kp DE_F	
+		&kp DE_V		&hmr RALT DE_P	&kp DE_L		 &kp DE_D		  &ad_b 		  &minsunds	   	  &ad_u 		  &ad_o 		  &hmr RALT DE_Y  &kp DE_F	
 	// ---------------+---------------+----------------+----------------+--------------||---------------+---------------+---------------+---------------+---------------|
 														 &lt SYM BSPC	  &lt NUM DE_R	  &lt NAV SPACE	  &lt MATH RET
 							        				  //----------------+--------------||---------------+---------------|
