@@ -20,4 +20,4 @@ ADAPT(b,        DE_L,       &kp DE_B,  &kp DE_M,          ADAPT_FAST) // LB -> L
 ADAPT(j,        DE_M,       &kp DE_J,  &kp DE_B,          ADAPT_FAST) // MJ -> MB
 ADAPT(m,        DE_G,       &kp DE_M,  &kp DE_L,          ADAPT_FAST) // GM -> GL
 ADAPT(l,        DE_B,       &kp DE_L,  &kp DE_M,          ADAPT_FAST) // BL -> BM 
-ADAPT(w,        DE_X DE_M,  &kp DE_W,  &kp DE_P,          ADAPT_FAST) // XW -> XP | MW -> MP
+ADAPT(w,        DE_X DE_M,  &kp DE_W,  &kp DE_P &kp DE_P, ADAPT_FAST) // XW -> XP | MW -> MP

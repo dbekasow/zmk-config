@@ -23,7 +23,7 @@
             board = "nice_nano_v2";
             shield = "splitkb_aurora_sweep_%PART%";
 
-            zephyrDepsHash = "sha256-37o5eTIXfpNo3piqzOenurGvOrlI3e0U+tunSkOn44g=";
+            zephyrDepsHash = "sha256-J3zqL/AEDH8WUbgWYsyEbgJf5mKa1Y5jZi/4Bfcjps0=";
 
             meta = with lib; {
               description = "Firmware for my sweep keyboard";
