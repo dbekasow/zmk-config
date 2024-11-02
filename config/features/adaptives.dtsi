@@ -1,5 +1,5 @@
 #define STR(s) #s
-#define ADAPT(NAME, ANTE, DEFAULT, RESULT, ...)       \
+#define ADAPT(NAME, ANTE, DEFAULT, RESULT, DELAY, ...)       \
     ad_##NAME: adaptive_##NAME {                      \
         compatible = "zmk,behavior-antecedent-morph"; \
         label = STR(ADAPTIVE_##NAME);                 \
@@ -7,21 +7,17 @@
         defaults = <DEFAULT>;                         \
         antecedents = <ANTE>;                         \
         bindings = <RESULT>;                          \
-        max-delay-ms = <250>;                         \
+        max-delay-ms = <DELAY>;                       \
 	   __VA_ARGS__                                    \
     };
 
-/* Vokal-Adaptives */
-ADAPT(comasemi, DE_A DE_E, &comasemi, &kp DE_U &kp DE_O) // A, -> AU | E, -> EO
-ADAPT(minsunds, DE_U DE_O, &minsunds, &kp DE_A &kp DE_E) // U- -> UA | O- -> OE
+#define ADAPT_FAST 200
 
-/* M/L Transformation */
-ADAPT(g, DE_M, &kp DE_G, &kp DE_L)                       // MG -> ML
-ADAPT(b, DE_L, &kp DE_B, &kp DE_M)                       // LB -> LM
-ADAPT(j, DE_M, &kp DE_J, &kp DE_B)                       // MJ -> MB
-
-/* G-Adaptives */
-ADAPT(m, DE_G, &kp DE_M, &kp DE_L)                       // GM -> GL
-
-/* B-Adaptives */
-ADAPT(l, DE_B, &kp DE_L, &kp DE_M)                       // BL -> BM 
+ADAPT(comasemi, DE_A DE_E,  &comasemi, &kp DE_U &kp DE_O, ADAPT_FAST) // A, -> AU | E, -> EO
+ADAPT(minsunds, DE_U DE_O,  &minsunds, &kp DE_A &kp DE_E, ADAPT_FAST) // U- -> UA | O- -> OE
+ADAPT(g,        DE_M,       &kp DE_G,  &kp DE_L,          ADAPT_FAST) // MG -> ML
+ADAPT(b,        DE_L,       &kp DE_B,  &kp DE_M,          ADAPT_FAST) // LB -> LM
+ADAPT(j,        DE_M,       &kp DE_J,  &kp DE_B,          ADAPT_FAST) // MJ -> MB
+ADAPT(m,        DE_G,       &kp DE_M,  &kp DE_L,          ADAPT_FAST) // GM -> GL
+ADAPT(l,        DE_B,       &kp DE_L,  &kp DE_M,          ADAPT_FAST) // BL -> BM 
+ADAPT(w,        DE_X DE_M,  &kp DE_W,  &kp DE_P,          ADAPT_FAST) // XW -> XP | MW -> MP
