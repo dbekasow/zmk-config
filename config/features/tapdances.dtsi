@@ -9,4 +9,4 @@
     };
 	
 DANCE(ad_j_nav, &ad_j, &to NAV)
-DANCE(pg_up_base, &kp PG_UP, &to NAV)
+DANCE(pg_up_base, &kp PG_UP, &to BASE)
