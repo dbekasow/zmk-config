@@ -18,7 +18,7 @@
    };
 
 #define COMBO_FAST 40
-#define COMBO_SLOW 60
+#define COMBO_SLOW 65
 
 // Additional letters
 COMBO(z, &kp DE_Z,         LM1 LM3, BASE, COMBO_FAST)
@@ -38,6 +38,9 @@ COMBO(ch, &digraphCh,      LM2 LM3, BASE, COMBO_FAST)
 COMBO(th, &digraphTh,      LM1 LM2, BASE, COMBO_FAST)
 COMBO(ph, &digraphPh,      LB2 LB3, BASE, COMBO_FAST)
 COMBO(qu, &digraphQu,      LB1 LB4, BASE, COMBO_SLOW)
+
+// Uncommon digraphs
+COMBO(hx, &digraphHx,      RM3 RM4, BASE, COMBO_SLOW)
 
 // Trigraphs
 COMBO(sch, &trigraphSch,   LM1 LM4, BASE, COMBO_SLOW)

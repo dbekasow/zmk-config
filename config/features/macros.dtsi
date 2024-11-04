@@ -21,6 +21,7 @@ DIGRAPH(Ch, DE_C, DE_H)
 DIGRAPH(Th, DE_T, DE_H)
 DIGRAPH(Ph, DE_P, DE_H)
 DIGRAPH(Qu, DE_Q, DE_U)
+DIGRAPH(Hx, DE_H, DE_X)
 
 #define TRIGRAPH(NAME, FIRST, SECOND, THIRD) \
     trigraph##NAME: trigraph##NAME {         \
