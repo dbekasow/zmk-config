@@ -43,6 +43,5 @@ COMBO(qu, &digraphQu,      LB1 LB4, BASE, COMBO_SLOW)
 COMBO(sch, &trigraphSch,   LM1 LM4, BASE, COMBO_SLOW)
 
 // Functions
-COMBO(copy,  &kp LC(DE_C), LB2 LB3, BASE, COMBO_FAST)
-COMBO(paste, &kp LC(DE_V), LB3 LB4, BASE, COMBO_FAST)
-COMBO(cut,   &kp LC(DE_X), LB2 LB4, BASE, COMBO_SLOW)
+COMBO(copy,  &kp LC(DE_C), LB1 LB2, BASE, COMBO_FAST)
+COMBO(paste, &kp LC(DE_V), LB1 LB3, BASE, COMBO_FAST)
