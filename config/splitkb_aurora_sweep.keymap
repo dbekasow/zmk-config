@@ -20,6 +20,7 @@
 		#include "features/homerows.dtsi"
 		#include "features/overrides.dtsi"
 		#include "features/adaptives.dtsi"
+		#include "features/tapdances.dtsi"
 	};
 
 	macros {

@@ -1,0 +1,12 @@
+#define STR(s) #s
+#define DANCE(NAME, FIRST, SECOND)             \
+    td_##NAME: tap_dance_##NAME {              \
+        compatible = "zmk,behavior-tap-dance"; \
+        label = STR(TAP_DANCE_##NAME);         \
+        #binding-cells = <0>;                  \
+        tapping-term-ms = <200>;               \
+        bindings = <FIRST>, <SECOND>;          \
+    };
+	
+DANCE(ad_j_nav, &ad_j, &to NAV)
+DANCE(pg_up_base, &kp PG_UP, &to NAV)
