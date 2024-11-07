@@ -38,6 +38,7 @@
 		#include "layers/math.dtsi"
 		#include "layers/number.dtsi"
 		#include "layers/navigation.dtsi"
-		#include "layers/function.dtsi"
+	 	#include "layers/function.dtsi"
+	 	#include "layers/mirror.dtsi"
 	};
 };

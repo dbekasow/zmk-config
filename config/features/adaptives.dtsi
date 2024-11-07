@@ -2,7 +2,6 @@
 #define ADAPT(NAME, ANTE, DEFAULT, RESULT, DELAY, ...)       \
     ad_##NAME: adaptive_##NAME {                      \
         compatible = "zmk,behavior-antecedent-morph"; \
-        label = STR(ADAPTIVE_##NAME);                 \
         #binding-cells = <0>;                         \
         defaults = <DEFAULT>;                         \
         antecedents = <ANTE>;                         \

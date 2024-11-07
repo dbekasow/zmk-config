@@ -17,6 +17,9 @@
 // Secondary layers
 #define FUN   5  // Function keys and system controls
 
+// Combo layers
+#define MIRROR 6 // Mirror keys for right hand 
+
 /*
  * Layer activation overview:
  * -------------------------
