@@ -1,4 +1,3 @@
-#define STR(s) #s
 #define ADAPT(NAME, ANTE, DEFAULT, RESULT, DELAY, ...)       \
     ad_##NAME: adaptive_##NAME {                      \
         compatible = "zmk,behavior-antecedent-morph"; \
@@ -11,13 +10,16 @@
     };
 
 #define ADAPT_FAST 200
+#define ADAPT_SLOW 300
 
 ADAPT(comasemi, DE_A DE_E,  &comasemi, &kp DE_U &kp DE_O, ADAPT_FAST) // A, -> AU | E, -> EO
 ADAPT(minsunds, DE_U DE_O,  &minsunds, &kp DE_A &kp DE_E, ADAPT_FAST) // U- -> UA | O- -> OE
 ADAPT(g,        DE_M,       &kp DE_G,  &kp DE_L,          ADAPT_FAST) // MG -> ML
-ADAPT(b,        DE_L,       &kp DE_B,  &kp DE_M,          ADAPT_FAST) // LB -> LM
 ADAPT(j,        DE_M,       &kp DE_J,  &kp DE_B,          ADAPT_FAST) // MJ -> MB
 ADAPT(m,        DE_G,       &kp DE_M,  &kp DE_L,          ADAPT_FAST) // GM -> GL
 ADAPT(l,        DE_B,       &kp DE_L,  &kp DE_M,          ADAPT_FAST) // BL -> BM 
 ADAPT(w,        DE_X DE_M,  &kp DE_W,  &kp DE_P &kp DE_P, ADAPT_FAST) // XW -> XP | MW -> MP
-ADAPT(d,        DE_L,       &kp DE_D,  &kp DE_G,          ADAPT_FAST) // LD ~> LG
+ADAPT(b,        DE_L,       &kp DE_B,  &kp DE_M,          ADAPT_FAST) // LB -> LM
+
+ADAPT(k,        DE_ADIA DE_UDIA DE_ODIA,  &kp DE_K,       &kp DE_H &kp DE_H &kp DE_H, ADAPT_SLOW) // ÄK -> ÄH | ÜK -> ÜH | ÖK -> ÖH
+ADAPT(v,        DE_ADIA DE_UDIA DE_ODIA,  &kp DE_V,       &kp DE_F &kp DE_F &kp DE_F, ADAPT_SLOW) // ÄV -> ÄF | ÜV -> ÜF | ÖV -> ÖF
