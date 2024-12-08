@@ -25,7 +25,7 @@ COMBO(gh,        &digraphGh,   LT1 LT2, BASE,   COMBO_FAST)
 COMBO(q,         &kp DE_Q,     LT1 LT3, BASE,   COMBO_FAST)
 COMBO(qu,        &digraphQu,   LT1 LT4, BASE,   COMBO_SLOW)
 COMBO(wh,        &digraphWh,   LT2 LT3, BASE,   COMBO_FAST)
-COMBO(ss,        &kp DE_SS,    LT3 LT4, BASE,   COMBO_FAST)
+COMBO(ss,        &kp DE_SS,    LT3 LT4, BASE,   COMBO_SLOW)
 
 COMBO(th,        &digraphTh,   LM1 LM2, BASE,   COMBO_FAST)
 COMBO(z,         &kp DE_Z,     LM1 LM3, BASE,   COMBO_FAST)
