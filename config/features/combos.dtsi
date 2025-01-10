@@ -30,7 +30,7 @@ COMBO(ss,        &kp DE_SS,    LT3 LT4, BASE,   COMBO_SLOW)
 COMBO(th,        &digraphTh,   LM1 LM2, BASE,   COMBO_FAST)
 COMBO(z,         &kp DE_Z,     LM1 LM3, BASE,   COMBO_FAST)
 COMBO(sch,       &trigraphSch, LM1 LM4, BASE,   COMBO_SLOW)
-COMBO(ch,        &digraphCh,   LM2 LM3, BASE,   COMBO_FAST)
+COMBO(ch,        &digraphCh,   LM2 LM3, BASE,   COMBO_SLOW)
 COMBO(sh,        &digraphSh,   LM3 LM4, BASE,   COMBO_SLOW)
 
 COMBO(copy,      &kp LC(DE_C), LB1 LB2, BASE,   COMBO_FAST)
